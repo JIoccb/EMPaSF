@@ -93,9 +93,16 @@
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L94" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">f:= x -&gt; x^2 + x - 1</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">f:= x -&gt; sin(x)</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEiZkYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi5RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwvJSllcXVhbGl0eUdGPS1GLDYlUSJ4RidGL0YyLUY2Ni5RJiZtYXA7RidGOUY7Rj4vRkFGMUZCRkRGRkZIRkpGTUZPLUYjNigtSSVtc3VwR0YkNiVGUS1JI21uR0YkNiRRIjJGJ0Y5LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GNjYuUScmcGx1cztGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMjIyMjIyMmVtRicvRk5GYm9GT0ZRLUY2Ni5RKCZtaW51cztGJ0Y5RjtGPkZARkJGREZGRkhGYW9GY29GTy1GaG42JFEiMUYnRjlGOUY5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSJmR0YoZio2I0kieEdGKEYoNiRJKW9wZXJhdG9yR0YoSSZhcnJvd0dGKEYoLCgqJDkkIiIjIiIiRjZGOCEiIkY4RihGKEYoNyNGLg==</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEiZkYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi5RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwvJSllcXVhbGl0eUdGPS1GLDYlUSJ4RidGL0YyLUY2Ni5RJiZtYXA7RidGOUY7Rj4vRkFGMUZCRkRGRkZIRkpGTUZPLUYjNiYtRiw2JVEkc2luRicvRjBGPUY5LUY2Ni5RMCZBcHBseUZ1bmN0aW9uO0YnRjlGO0Y+RkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTkZcb0ZPLUkobWZlbmNlZEdGJDYkLUYjNiZGUS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjlGOUY5">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSJmR0YoZio2I0kieEdGKEYoNiRJKW9wZXJhdG9yR0YoSSZhcnJvd0dGKEYoLUkkc2luR0YlNiM5JEYoRihGKDcjRi4=</Equation></Text-field>
+</Output>
+</Group>
+<Group hide-input="false" labelreference="L108" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">evalf(int(f(x), x = 0 .. Pi));
+</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEjMi5GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIiIyIiIQ==</Equation></Text-field>
 </Output>
 </Group>
 <Group hide-input="false" labelreference="L2" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -105,37 +112,37 @@
   h := (b - a) / n:
   for i from 1 to n do
     x := a + (i - 1/2) * h:
-    res := res + f(x):
+    res := res + evalf(f(x)):
   od:
   res := res * h:
-  return evalf(res):
+  return res:
 end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L4" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Rectangle(f, 3, 5, 100);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Rectangle(f, 0, Pi, 100);</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMzguNjY2NjAwMDBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrKyttbVEhIik=</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMi4wMDAwODIyNTFGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrXkEzKz8hIio=</Equation></Text-field>
 </Output>
 </Group>
 <Group hide-input="false" labelreference="L7" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Trapeze := proc(f, a, b, n)
   local res, h, i, x;
   h := (b - a) / n:
-  res := f(a) + f(b):
+  res := evalf(f(a)) + evalf(f(b)):
   for i from 1 to n-1 do
     x := a + i * h:
-    res := res + 2 * f(x):
+    res := res + 2 * evalf(f(x)):
   od:
   res := res * h / 2:
-  return evalf(res):
+  return res:
 end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L93" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Trapeze(f, 3, 5, 100);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Trapeze(f, 0, Pi, 101);</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMzguNjY2ODAwMDBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrKytvbVEhIik=</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMS45OTk4Mzg3NDlGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrXChRKSoqPiEiKg==</Equation></Text-field>
 </Output>
 </Group>
 <Group labelreference="L16" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -145,65 +152,57 @@ end proc:</Text-field>
     error &quot;n must be even&quot;;
   end if:
   h := (b - a) / n:
-  res := f(a) + f(b):
+  res := evalf(f(a)) + evalf(f(b)):
   for i from 1 to n-1 do
     x := a + i * h:
     if i mod 2 = 0 then
-      res := res + 2 * f(x):
+      res := res + 2 * evalf(f(x)):
     else
-      res := res + 4 * f(x):
+      res := res + 4 * evalf(f(x)):
     end if:
   od:
   res := res * h / 3:
-  return evalf(res):
+  return res:
 end proc:
 </Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L18" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Simpson(f, 3, 5, 100);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Simpson(f, 0, Pi, 102);</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMzguNjY2NjY2NjdGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrbm1tbVEhIik=</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMi4wMDAwMDAwMDdGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrMisrKz8hIio=</Equation></Text-field>
 </Output>
 </Group>
 <Group hide-input="false" labelreference="L20" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(LinearAlgebra):
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">k[1]:= 0.171324492:
+k[2]:= 0.360761573:
+k[3]:= 0.467913935:
+k[4]:= 0.467913935:
+k[5]:= 0.360761573:
+k[6]:= 0.171324492:
 
-Gauss := proc(f, a, b, n)
-    local i, J, E, nodes, vecs, weights, total, x, h, c, v1;
-    h := (b - a)/2;
-    c := (a + b)/2;
-    
-    J := Matrix(n, n, 0);
-    for i from 1 to n-1 do
-        J[i, i+1] := i / sqrt(4*i^2 - 1);
-        J[i+1, i] := i / sqrt(4*i^2 - 1);
-    end do;
-    
-    E := Eigenvectors(J, output = 'list');
-    nodes := map(e -&gt; e[1], E);
-    vecs := map(e -&gt; e[3], E);
-    v1 := map(u -&gt; u[1], vecs);
-    
-    weights := Vector(n);
-    for i from 1 to n do
-        weights[i] := 2 * (v1[i][1])^2;
-    end do;
-    
-    total := 0;
-    for i from 1 to n do
-        x := h * nodes[i] + c;
-        total := total + weights[i] * f(x);
-    end do;
-    
-    return evalf(h * total);
-end proc:</Text-field>
+x[1]:= 0.932469514:
+x[2]:= 0.661209386:
+x[3]:= 0.238619186:
+x[4]:= 0.238619186:
+x[5]:= 0.661209386:
+x[6]:= 0.932469514:
+
+Gauss:= proc(f,a,b,n)
+  local i, sum_f:
+  sum_f:= 0;
+  for i from 1 to n do
+    sum_f:= sum_f+k[i]*f((b - a)* x[i] / 2 +(a + b) / 2);
+  end do;
+  sum_f:= evalf((b - a) / 2 * sum_f);
+end proc:
+</Text-field>
 </Input>
 </Group>
 <Group hide-input="false" labelreference="L22" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Gauss(f, 3, 5, 3);</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Gauss(f, 0, Pi, 6);</Text-field>
 </Input>
-<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMTI4LjQwMDAwMDBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrKysrJUciISIo</Equation></Text-field>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEsMi4wMDAwMDAwMDBGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JCIrKysrKz8hIio=</Equation></Text-field>
 </Output>
 </Group>
 <Group labelreference="L98" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
