@@ -111,7 +111,7 @@
   res := 0:
   h := (b - a) / n:
   for i from 1 to n do
-    x := a + (i - 1/2) * h:
+    x := a + (i - 1 / 2) * h:
     res := res + evalf(f(x)):
   od:
   res := res * h:
@@ -188,13 +188,13 @@ x[4]:= 0.238619186:
 x[5]:= 0.661209386:
 x[6]:= 0.932469514:
 
-Gauss:= proc(f,a,b,n)
-  local i, sum_f:
-  sum_f:= 0;
+Gauss:= proc(f, a, b, n)
+  local i, res:
+  res:= 0;
   for i from 1 to n do
-    sum_f:= sum_f+k[i]*f((b - a)* x[i] / 2 +(a + b) / 2);
+    res:= res + k[i] * f((b - a) * x[i] / 2 + (a + b) / 2);
   end do;
-  sum_f:= evalf((b - a) / 2 * sum_f);
+  return evalf((b - a) / 2 * res);
 end proc:
 </Text-field>
 </Input>
@@ -206,7 +206,14 @@ end proc:
 </Output>
 </Group>
 <Group labelreference="L98" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2LlEifkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0Y0LyUqc3ltbWV0cmljR0Y0LyUobGFyZ2VvcEdGNC8lLm1vdmFibGVsaW1pdHNHRjQvJSdhY2NlbnRHRjQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZDLyUpZXF1YWxpdHlHRjQvJStleGVjdXRhYmxlR0Y0Ri8=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2LlEifkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0Y0LyUqc3ltbWV0cmljR0Y0LyUobGFyZ2VvcEdGNC8lLm1vdmFibGVsaW1pdHNHRjQvJSdhY2NlbnRHRjQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZDLyUpZXF1YWxpdHlHRjQvJStleGVjdXRhYmxlR0Y0Ri8=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">printf(&quot;___________________________________________&quot;);
+<Font encoding="UTF-8">printf(&quot;\134\320\272\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \321\203\320\267\320\273\320\276\320\262 \321\202\320\276\321\207\320\275\320\276\321\201\321\202\321\214  \320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272\320\270  \320\242\321\200\320\260\320\277\320\265\321\206\320\270\320\270      \320\241\320\270\320\277\320\274\321\201\320\276\320\275 \320\223\320\260\321\203\321\201\321\201&quot;);
+</Font>for z from 0 to n do
+  x:= a -h/2+z*h:
+  c1:=L(x)/f(x)-1:
+  c2:= N(x)/f(x) - 1:
+<Font encoding="UTF-8">  printf(&quot;\134n %6.2d %8.2f %12.2e %12.3e&quot;, z, x, c1, c2);
+</Font>od:</Text-field>
 </Input>
 </Group>
 </Worksheet>
